@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3C83E73-887F-4B72-8AC2-6EDA2892C078}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CLATest.Droid</RootNamespace>
+    <AssemblyName>CLATest.Droid</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>armeabi-v7a;armeabi;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Compat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.UI.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.Utils.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment">
+      <HintPath>..\packages\Xamarin.Android.Support.Fragment.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Media.Compat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Base.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Location">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Location.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Location.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Maps.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="GlideAssembly">
+      <HintPath>..\Components\GlideComponent-3.7.0\lib\android\GlideAssembly.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLATest\CLATest.csproj">
+      <Project>{3CD2BC9C-2689-4148-B0BF-C3EC4833204A}</Project>
+      <Name>CLATest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HomeFragment.cs" />
+    <Compile Include="LoginCargaFragment.cs" />
+    <Compile Include="MenuDrawerActivity.cs" />
+    <Compile Include="PageCustomAdapter.cs" />
+    <Compile Include="FragmentInbox.cs" />
+    <Compile Include="FragmentMiCuenta.cs" />
+    <Compile Include="AdapterMiCuenta.cs" />
+    <Compile Include="FragmentDatos.cs" />
+    <Compile Include="FragmentIntereses.cs" />
+    <Compile Include="FragmentCuentaBancaria.cs" />
+    <Compile Include="ActivityCambiarClave.cs" />
+    <Compile Include="Validacion.cs" />
+    <Compile Include="ActivityRegistro.cs" />
+    <Compile Include="LoginMenuFragment.cs" />
+    <Compile Include="ActivitySplash.cs" />
+    <Compile Include="FragmentClaveRecuperar.cs" />
+    <Compile Include="FragmentClaveNueva.cs" />
+    <Compile Include="CircleTransform.cs" />
+    <Compile Include="FragmentMaps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\.DS_Store" />
+    <AndroidResource Include="Resources\layout\app_bar.axml" />
+    <AndroidResource Include="Resources\layout\fragment_home.axml" />
+    <AndroidResource Include="Resources\layout\fragment_login_menu.axml" />
+    <AndroidResource Include="Resources\layout\fragment_tab_login_carga.axml" />
+    <AndroidResource Include="Resources\layout\headerdrawerlayout.axml" />
+    <AndroidResource Include="Resources\layout\item_divider.xml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\Maindrawer.axml" />
+    <AndroidResource Include="Resources\menu\action_menu.xml" />
+    <AndroidResource Include="Resources\menu\navmenu.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\anim\mov_login.xml" />
+    <AndroidResource Include="Resources\drawable\my_elevation.axml" />
+    <AndroidResource Include="Resources\layout\fragment_mi_cuenta.axml" />
+    <AndroidResource Include="Resources\layout\Perfil.axml" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\facebook.png" />
+    <AndroidResource Include="Resources\layout\cuenta_bancaria_fragment.xml" />
+    <AndroidResource Include="Resources\layout\interteses_fragment.xml" />
+    <AndroidResource Include="Resources\layout\perfil_fragment.xml" />
+    <AndroidResource Include="Resources\layout\clave_recuperar_fragment.axml" />
+    <AndroidResource Include="Resources\layout\clave_nueva_fragment.axml" />
+    <AndroidResource Include="Resources\layout\registro_activity.axml" />
+    <AndroidResource Include="Resources\layout\homeLayout.axml" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\a_familiar.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ayuda.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\certificados.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\convenios.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\fondo_azul.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mapa.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\torta.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\a_familiar.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ayuda.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\certificados.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\convenios.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\fondo_azul.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\mapa.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\torta.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\a_familiar.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ayuda.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\certificados.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\convenios.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\fondo_azul.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\mapa.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\torta.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\a_familiar.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ayuda.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\certificados.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\convenios.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\fondo_azul.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\mapa.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\torta.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\.DS_Store" />
+    <AndroidResource Include="Resources\mipmap-hdpi\aceptar_login.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\clave_feliz.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\clave_triste.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\clave.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\flecha_volver.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\foto_sin_foto.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\mail.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\n_seria.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\olvidar_clave.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\repetir_clave.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\rut.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\telefono.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\aceptar_login.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\clave_feliz.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\clave_triste.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\clave.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\flecha_volver.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\foto_sin_foto.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\mail.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\n_seria.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\olvidar_clave.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\repetir_clave.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\rut.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\telefono.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\aceptar_login.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\clave_feliz.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\clave_triste.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\clave.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\flecha_volver.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\foto_sin_foto.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\mail.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\n_seria.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\olvidar_clave.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\repetir_clave.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\rut.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\telefono.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_aceptar_login.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_clave_feliz.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_clave_triste.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_clave.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_flecha_volver.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_foto_sin_foto.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_mail.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_n_seria.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_olvidar_clave.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_repetir_clave.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_rut.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_personal_telefono.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_ayuda_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_cerrar_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_certificado_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_convenio_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_credito_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_home_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_inbox_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_licmed_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_micuenta_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_sucursal_gris.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\im_login.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_home.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\perfil_menu.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_belleza.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_cine.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_deporte.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_educacion.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_gastro.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_musica.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_redes.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_teatro.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\im_viajes.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_belleza.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_cine.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_deporte.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_educacion.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_gastro.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_musica.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_redes.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_teatro.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\im_viajes.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_belleza.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_cine.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_deporte.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_educacion.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_gastro.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_musica.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_redes.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_teatro.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\im_viajes.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_belleza.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_cine.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_deporte.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_educacion.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_gastro.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_musica.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_redes.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_teatro.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\im_viajes.png" />
+    <AndroidResource Include="Resources\raw\splash.mp4" />
+    <AndroidResource Include="Resources\layout\splash_activity.axml" />
+    <AndroidResource Include="Resources\menu\menu_datos.axml" />
+    <AndroidResource Include="Resources\menu\menu_registrar.axml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_editar.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_editar.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_editar.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_editar.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_facebook.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_guardar_cuenta.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_guardar_cuenta.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_guardar_cuenta.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_guardar_cuenta.png" />
+    <AndroidResource Include="Resources\layout\clave_cambio_activity.axml" />
+    <AndroidResource Include="Resources\layout\maps_fragment.axml" />
+    <AndroidResource Include="Resources\values\google_maps_api.axml" />
+    <AndroidResource Include="Resources\mipmap-mdpi\mk_localizacion.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\mk_localizacion.png" />
+    <AndroidResource Include="Resources\layout\sliding_up_panel.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportdesign">
+      <Version>24.2.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv7appcompat">
+      <Version>24.2.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleplayservices-location">
+      <Version>29.0.0.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleplayservices-maps">
+      <Version>29.0.0.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="GlideComponent">
+      <Version>3.7.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="slidinguppanel">
+      <Version>1.0.5</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="Resources\mipmap-hdpi\" />
+    <Folder Include="Resources\mipmap-mdpi\" />
+    <Folder Include="Resources\mipmap-xhdpi\" />
+    <Folder Include="Resources\raw\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.24.2.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />
+</Project>

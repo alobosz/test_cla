@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single"> 
+
+		<item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_gris"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_mi_cuenta"
+            android:icon="@mipmap/ic_micuenta_gris"
+            android:title="Mi Cuenta" />
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@mipmap/ic_inbox_gris"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_sucursales"
+            android:icon="@mipmap/ic_sucursal_gris"
+            android:title="Sucursales" />
+        <item
+            android:id="@+id/nav_convenios"
+            android:icon="@mipmap/ic_convenio_gris"
+            android:title="Convenios" />
+
+         <item
+            android:id="@+id/nav_licencias"
+            android:icon="@mipmap/ic_licmed_gris"
+            android:title="Licencias Médicas" />
+		
+        <item
+            android:id="@+id/nav_creditos"
+            android:icon="@mipmap/ic_credito_gris"
+            android:title="Créditos" />
+
+		
+        <item
+            android:id="@+id/nav_certificados"
+            android:icon="@mipmap/ic_certificado_gris"
+            android:title="Certificados" />
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@mipmap/ic_ayuda_gris"
+            android:title="Centro de Ayuda" />
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@mipmap/ic_cerrar_gris"
+            android:title="Cerrar Sesión" />
+    </group>
+</menu>

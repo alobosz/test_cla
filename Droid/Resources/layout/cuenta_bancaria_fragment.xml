@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/area_nombre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+<!--android.support.design.widget.AppBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:layout_weight="0">
+        <android.support.design.widget.TabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v4.view.ViewPager-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Banco" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/it_banco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                >
+                <android.support.v7.widget.AppCompatSpinner
+					android:id="@+id/sp_banco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true"
+    				android:entries="@array/bancos"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Tipo de Cuenta" />
+            
+                <android.support.v7.widget.AppCompatSpinner
+					android:id="@+id/sp_tipo_cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true"
+    				android:entries="@array/cuenta"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Número de cuenta" />
+            <!--android.support.design.widget.TextInputLayout
+                android:id="@+id/it_n_cuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                -->
+                <EditText
+						android:layout_marginLeft="5dp"
+					android:id="@+id/et_n_cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					
+					android:hint="**** **** **** 1234"
+					android:enabled="false"
+
+
+					/>
+            <!--/android.support.design.widget.TextInputLayout-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Declaro que soy titular de la cuenta"
+				/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+		android:id="@+id/btn_update_bancaria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Cuenta"
+        android:layout_weight="0"
+        android:layout_gravity="bottom"
+        android:background="#D0D515"
+        android:textColor="#2167AA"
+        android:textSize="12sp"
+		
+		/>
+</LinearLayout><!--android:theme="@style/AppTheme.FlatButton.Primary"-->

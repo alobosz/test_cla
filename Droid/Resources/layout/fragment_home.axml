@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/im_home">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Feliz Cumpleaños Juan!"
+        android:layout_marginRight="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:layout_weight="0"
+		android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celebra tu cumpleaños con los descuentos especiales que tenemos para ti"
+        android:layout_marginRight="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_weight="0"
+		android:gravity="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/torta"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/asd"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="2">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp">
+                <ImageButton
+                    android:id="@+id/btn_ayuda_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mapa"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margen_grid_tex_img"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sucursales"
+                    android:textColor="#fff"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/certificados"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margen_grid_tex_img" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/certificados"
+                    android:textColor="#fff"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ayuda"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margen_grid_tex_img"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:elevation="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ayuda"
+                    android:textColor="#fff"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/convenios"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margen_grid_tex_img"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/convenios"
+                    android:textColor="#fff"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/a_familiar"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margen_grid_tex_img" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asignacion"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+					android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/certificados"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margen_grid_tex_img"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/certificados"
+                    android:textColor="#fff"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

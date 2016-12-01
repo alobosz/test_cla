@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_rut"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:text="Rut"
+            android:textSize="10dp" />
+    <!--android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"-->
+        <EditText
+            android:id="@+id/rut"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="12.345.678-9"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp" />
+    <!--/android.support.design.widget.TextInputLayout-->
+        <include
+            layout="@layout/item_divider" />
+        <TextView
+            android:id="@+id/tv_pass"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:text="Password"
+            android:textSize="10dp" />
+    <!--android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="••••••••"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp" />
+            <ImageView
+                android:id="@+id/img_olvidar_clave"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:src="@mipmap/ic_personal_olvidar_clave"
+                tools:visibility="false" />
+        </LinearLayout>
+    <!--/android.support.design.widget.TextInputLayout-->
+        <Button
+            android:id="@+id/botonLogin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#d0d515"
+            android:text="Ingresar"
+            android:textColor="#0D4769"
+            android:theme="@style/MyButton" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="¿No tienes cuenta?" />
+            <TextView
+                android:id="@+id/registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Registrar"
+                android:textColor="#009edf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

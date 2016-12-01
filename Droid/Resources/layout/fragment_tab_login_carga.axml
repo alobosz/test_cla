@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <LinearLayout
+            android:layout_marginBottom="45dp"
+            android:gravity="center_vertical"
+            android:id="@+id/linear_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/tv_rut"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_weight="0"
+                android:text="Rut"
+                android:textSize="10dp" />
+        <!--android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"-->
+            <AutoCompleteTextView
+                android:paddingLeft="10dp"
+                android:id="@+id/rut"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:hint="12.345.678-9"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingBottom="5dp" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/botonLogin"
+            android:text="Ingresar"
+            android:background="#d0d515"
+            android:theme="@style/MyButton"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</LinearLayout>
